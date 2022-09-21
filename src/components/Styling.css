@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+input,button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+    border-bottom: 0.2px solid black;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+}
+
+.the{
+    font-size: 15px;
+    
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.navDiv li{
+    
+    list-style: none;
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 5px 20px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+}
+.navDiv li:hover,.active{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad ;
+    color: #fff;
+    transition: .2s;
+}
+.active{
+    color:#ff96ad;
+}
+.linkD{
+    text-decoration: none;
+}
+
+/* Styling of Banner Component */
+
+.bannerContainer{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    padding: 10px 0 10px 10px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.leftBanner{
+    border: 1px solid transparent;
+    height: 95%;
+    width: 65%;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url('./valley1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bannerOneTitle{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: #fff;
+}
+
+
+
+
+.rightBanner{
+   
+    height: 95%;
+    width: 30%;
+    margin: 10px;
+    margin-left: 10px;
+}
+#firstSBanner{
+    margin-bottom: 20px;
+    background-image: url('./valley4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#secondSBanner{
+    background-image: url('./valley5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rightSubBanner{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 48%;
+    
+}
+
+/* styling of headline of articles */
+
+.headLine{
+    margin: auto;
+    border-bottom: 5px solid red;
+    width: fit-content;
+    padding: 20px ;
+    margin-bottom: 3rem;
+    
+}
+
+.blogItem-link{
+    text-decoration: none;
+    color:#000  ;
+}
+
+
+
+
+
+
+
+
+/* Styling for Mobile View */
+
+
+@media only screen and (max-width: 600px){
+	
+    .navDiv{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .linkD{
+        margin-bottom: 10px;
+    }
+    .navDiv li:hover,.active{
+        background: #ff96ad;
+        box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 0px #ff96ad ;
+        color: #000;
+        transition: .2s;
+    }
+
+    .bannerContainer{
+        flex-direction: column;
+    }
+
+    .leftBanner{
+        width: 95%;
+    }
+    .rightBanner{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

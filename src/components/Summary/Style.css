@@ -1,0 +1,85 @@
+.mainContainer{
+    margin: auto;
+    width: 85%;
+    height: 1200px;
+    border-top: 2px solid purple;
+    padding-top: 40px;
+    margin-top: 20px;
+    display: flex;
+}
+.leftContainer{
+    width: 70%;
+    height: 100%;
+    
+    
+}
+.ritContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.headingArt{
+    /* margin: auto; */
+    border-bottom: 2px solid red;
+    width: fit-content;
+    padding: 10px ;
+    margin-bottom: 10px;
+    font-size: 30px;
+    
+}
+
+.advertise{
+    border: 1px solid black;
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardArticle{
+    width: 90%;
+    height: 22%;
+    
+    margin-bottom: 18px;
+    display: flex;
+}
+.cardArticle>img{
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.discr{
+    width: 55%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titleDisc{
+    width: 100%;
+    height: 60%;
+   font-size: 20px;
+    overflow: hidden;
+}
+
+
+
+/* Styling for Mobile view adding Media Queries */
+
+@media only screen and (max-width: 600px){
+    .leftContainer{
+        width: 95%;
+    }
+    .ritContainer{
+        display: none;
+    }
+}
+
+

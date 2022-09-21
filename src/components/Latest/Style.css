@@ -1,0 +1,47 @@
+
+.cardContainer{
+    width: 90%;
+    min-height: 25rem;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.card{
+    width: 20rem;
+    height: 25rem;
+    
+}
+.card> img{
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+}
+.cardTitle{
+  
+    height: 30%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.dateTitle
+{
+    margin: 5px 8px;
+}
+
+
+/* Styling for Mobile View Adding media Queries */
+
+
+@media only screen and (max-width: 600px){
+
+    .cardContainer{
+        width: 95%;
+        flex-direction: column;
+    }
+    .card{
+        width: 26rem;
+    }
+
+}

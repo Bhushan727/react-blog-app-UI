@@ -1,0 +1,142 @@
+
+.bollyContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+
+.leftContained{
+    width: 70%;
+    padding-right: 50px;
+    
+    
+}
+.bollyTitle{
+    margin-top: 50px;
+    width: fit-content;
+    border-bottom: 3px solid red;
+}
+.cardContained{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 50px 30px;
+}
+.cardContained>img{
+    width: 45%;
+    height: 300px;
+    border-radius: 15px;
+}
+.cardContents{
+    width: 55%;
+    
+    padding-left: 20px;
+    position: relative;
+}
+.newsTitle{
+    
+    margin: 10px 0;
+}
+.newsContent{
+    
+    height: 135px;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+.readMore{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+.dateIssue{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+.rightContained{
+    width: 30%;
+    /* height: 500px; */
+    
+    padding-left: 30px;
+    
+}
+.cardContaining{
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    border-bottom: 2px solid black;
+}
+.topCardImg{
+    width: 500px;
+    height: 200px;
+   
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 15px;
+    
+}
+.topCardImg>img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-left: -50px;
+    border-radius: 10px;
+}
+
+.topCardContents{
+    
+    position: relative;
+}
+.topNewsTitle{
+   
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    font-size: 17px;
+}
+.topReadMore{
+    float: right;
+}
+
+.topDateIssue{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* Styling for Mobile View adding media Queries */
+
+@media only screen and (max-width: 600px){
+    .bollyContainer{
+        flex-direction: column;
+    }
+
+    .leftContained{
+        width: 100%;
+    }
+    .newsContent{
+        display: none;
+    }
+
+    .rightContained{
+        width: 90%;
+    }
+
+}
+
+
+
+

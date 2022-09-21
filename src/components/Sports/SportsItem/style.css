@@ -1,0 +1,20 @@
+.card{
+    width: 20rem;
+    height: 25rem;
+    
+}
+.card> img{
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+}
+.cardTitle{
+  
+    height: 30%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.dateTitle
+{
+    margin: 5px 8px;
+}
